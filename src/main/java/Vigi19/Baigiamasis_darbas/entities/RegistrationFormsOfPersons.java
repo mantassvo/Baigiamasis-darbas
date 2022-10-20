@@ -29,7 +29,4 @@ public class RegistrationFormsOfPersons {
     @Column
     private LocalDate dateOfBirth;
 
-
-
-
 }

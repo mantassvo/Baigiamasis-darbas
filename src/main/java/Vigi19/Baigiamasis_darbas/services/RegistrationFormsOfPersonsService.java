@@ -41,5 +41,6 @@ public class RegistrationFormsOfPersonsService {
     }
 
     public void saveRegistrationFormsOfPersons(RegistrationFormsOfPersons newpersons) {
+        this.registrationFormsOfPersonsRepository.save(newpersons);
     }
 }

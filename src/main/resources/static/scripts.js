@@ -39,6 +39,7 @@ const renderPersonRegistrationTable = async () => {
   }
   const table = document.createElement("table");
   table.id = "personRegistrationTable";
+  table.className = "table"
   renderPersonRegistrationTableHeaders(table);
   registrationFormsOfPersons.forEach((person) => {
     renderPersonRegistrationTableRow(table, person);
@@ -175,10 +176,7 @@ const renderPersonRegistrationTableRow = (table, person) => {
   const nameCell = renderTableCell(person.name, "nameCell");
   const lastNameCell = renderTableCell(person.lastName, "lastNameCell");
   const emailCell = renderTableCell(person.email, "emailCell");
-  const dateOfBirthCell = renderTableCell(
-    person.dateOfBirth,
-    "dateOfBirthCell"
-  );
+  const dateOfBirthCell = renderTableCell(person.dateOfBirth,"dateOfBirthCell");
   const actionsCell = renderTableCell(undefined, "actionsCell");
   renderActionButtons(actionsCell, person.id);
 

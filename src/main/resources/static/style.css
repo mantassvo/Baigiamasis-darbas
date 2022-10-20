@@ -1,30 +1,91 @@
 body {
-    display: block;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
+  display: block;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+#boxTop {
+  display: block;
+  background-color: #04aa6d;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border: #333;
+  border-style: solid;
+  width: 30%;
+  margin-left: 33%;
+  text-align: center;
+}
+
+.myForm {
+  display: grid;
+  grid-template-columns: [labels] auto [controls] 1fr;
+  grid-auto-flow: row;
+  grid-gap: 0.8em;
+  background: beige;
+  padding: 1.2em;
+  border: #333;
+  border-style: solid;
+  width: 30%;
+  margin-left: 33%;
+}
+.myForm > label {
+  grid-column: labels;
+  grid-row: auto;
+}
+.myForm > input,
+.myForm > textarea {
+  grid-column: controls;
+  grid-row: auto;
+}
+.myForm > button {
+  grid-column: span 2;
+}
+#personRegistrationContainer {
+  background-color: beige;
+  margin-top: 5%;
+  border: black;
+  border-style: solid;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+.editButton {
+  margin: 1%;
+  border-radius: 20%;
+  background-color: aqua;
+}
+.deleteButton {
+  margin: 1%;
+  border-radius: 20%;
+}
+.saveButton {
+  margin: 1%;
+  border-radius: 20%;
+}
+.cancelButton {
+  margin: 1%;
+  border-radius: 20%;
+}
