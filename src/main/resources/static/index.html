@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="topnav">
+            <a class="active" href="./index.html">Home</a>
+            <a href="./formList.html">Užregistruotų asmenų sąrašas</a>       
+        </div>
+    </nav>
+    <main>
+        <!-- <form action="http://localhost:8080/RegistrationFormsOfPersons" method="post"> -->
+        <form id="personRegistrationForm" action="javascript:void(0);">
+            <div id="boxTop">Užpildykite formą</div>
+            <label for="name">Vardas</label>
+            <input type="text" name="name" id="name">
+            <label for="lastName">Pavardė</label>
+            <input type="text" name="lastName" id="lastName">
+            <label for="email">El. Paštas</label>
+            <input type="text" name="email" id="email">
+            <label for="dateOfBirth">Gimimo data</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" >
+            <button type="submit">submit</button>
+        </form>
+        <div class="personRegistrationContainer" id="personRegistrationContainer"></div>
+    </main>
+    
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
