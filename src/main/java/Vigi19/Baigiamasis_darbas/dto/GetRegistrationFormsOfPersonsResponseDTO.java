@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 
-public class GetRegistrationFormsOfPersonsDTO {
+public class GetRegistrationFormsOfPersonsResponseDTO {
 
     private Long id;
     private String name;

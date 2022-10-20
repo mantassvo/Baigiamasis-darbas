@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 
-public class CreateRegistrationFormsOfPersonsDTO {
+public class CreateRegistrationFormsOfPersonsRequestDTO {
 
     private String name;
     private String lastName;
@@ -19,7 +19,7 @@ public class CreateRegistrationFormsOfPersonsDTO {
 
     @Override
     public String toString() {
-        return "CreateRegistrationFormsOfPersonsDTO{" +
+        return "CreateRegistrationFormsOfPersonsRequestDTO{" +
                 "name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
